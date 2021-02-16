@@ -51,7 +51,7 @@ it('should show 20 in the running total when pressing 5 * 4 then =', () => {
   cy.get('#operator_equals').click();
   cy.get('.display').should('contain', '20');
 })
-it('should show 4 in the running total after multiple operations are chained together', () => {
+it('should show 5 in the running total after multiple operations are chained together', () => {
   cy.get('#number5').click();
   cy.get('#operator_multiply').click();
   cy.get('#number5').click();
